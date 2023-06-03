@@ -30,6 +30,8 @@ print("平均値:", average)
 # パターン②：数字当てゲーム
 import random
 
+print("3桁の数字を当てるゲームです．")
+
 # 正解の数字を決定する
 random_number = random.randint(100, 999)
 
@@ -48,10 +50,10 @@ for i in range(number_of_guesses):
         break
     else:
         if guess > random_number:
-            print("大きいです。")
+            print("もっと小さい数字です．")
         else:
-            print("小さいです。")
+            print("もっと大きい数字です．")
 
 # 回答回数が終了したらゲームを終了する
 if i == number_of_guesses - 1:
-    print("ゲームオーバーです。正解は", random_number, "でした。")
+    print("ゲームオーバーです．正解は", random_number, "でした．")
